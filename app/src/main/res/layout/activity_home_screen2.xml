@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen2Activity">
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:elevation="25dp">
+
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/notification" />
+        <ImageView
+            android:id="@+id/img_loction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/img_menu"
+            android:src="@drawable/location" />
+        <TextView
+            android:id="@+id/Tv_LoctionHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/img_loction"
+            android:text="Loction Here" />
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/menu" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Relativematerialbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rlHeader">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/NewCasebtn"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FFFFFF"
+            android:text="MY NEW CASE"
+            app:cornerRadius="40dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/SolveCaseBtn"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="-53dp"
+            android:backgroundTint="#0095B7"
+
+            android:text="MY SOLVED CASE"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

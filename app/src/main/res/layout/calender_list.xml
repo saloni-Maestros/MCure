@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/LinearAdapetr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnTimeSlot1"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="8:00Am To 10:00 Am"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnTimeSlot2"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="8:00Am To 10:00 Am"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+
+        <!-- <LinearLayout
+             android:id="@+id/LinearTime1"
+             android:layout_width="160dp"
+             android:layout_height="40dp"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/round_border">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="8:00Am To 10:00 Am"
+               android:paddingTop="10dp"
+               android:paddingStart="18dp"
+                 android:paddingEnd="10dp"
+                 android:textColor="@color/black"
+                 android:textSize="12dp"
+                 android:paddingRight="10dp"
+                 android:paddingLeft="18dp" />
+
+         </LinearLayout>-->
+       <!-- <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnTimeSlot2"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="10:00Am To 12:00 Pm"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp">
+
+        </com.google.android.material.button.MaterialButton>
+-->
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".PackageActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader52"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_backarrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/leftarrow"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lab Package"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlHeader52"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_select_packg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:text="Select Package"
+            tools:ignore="RtlCompat" />
+
+    <LinearLayout
+         android:id="@+id/et_select_items"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginEnd="10dp"
+         android:background="@drawable/shape_text"
+         android:orientation="horizontal"
+         android:paddingStart="10dp"
+         android:paddingLeft="10dp"
+         android:textSize="14dp"
+         tools:ignore="RtlCompat">
+
+         <Spinner
+             android:id="@+id/pac_spinner"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+
+     </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_tile_packg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:text="Title"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_text"
+            android:hint="Title"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:text="Description"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/et_des_packg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_text"
+            android:hint="Description"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            tools:ignore="RtlCompat" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Add"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#0095B7"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

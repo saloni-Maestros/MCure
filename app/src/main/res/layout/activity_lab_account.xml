@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LabAccountActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/rlHeader52"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/leftarrow"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/rlHeader52"
+        android:id="@+id/rl_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_Labuser"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/img_LabuserCamera"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/iconcamera"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Ll09"
+        android:layout_below="@id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txt_Diagnosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Lab Name"
+            android:textSize="12dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/et_labname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Lab Name"
+            android:background="@drawable/shape_text"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginEnd="10dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/txt_lab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lab contact Number"
+            android:textSize="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_text"
+            android:hint="Contact Number"
+            android:textSize="14dp"
+            android:layout_marginTop="25dp"
+            android:maxLength="9"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginEnd="10dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textSize="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_text"
+            android:hint="Enter Address"
+            android:textSize="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginEnd="10dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_text"
+            android:hint="gmailcom"
+            android:textSize="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginEnd="10dp"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+    </ProgressBar>
+
+</RelativeLayout>

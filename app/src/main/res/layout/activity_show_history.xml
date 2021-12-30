@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowHistoryActivity">
+    <RelativeLayout
+
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:elevation="25dp">
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       android:layout_toRightOf="@id/img_arrow"
+            android:text="BACK"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp" />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/rlHeader"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="18dp"
+        android:elevation="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_pic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/docter"  />
+        <RelativeLayout
+            android:id="@+id/rel3"
+            android:layout_width="250dp"
+            android:layout_below="@+id/img_pic"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:text="AARON MENDOZA"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/tv_username"
+                android:layout_marginLeft="15dp"
+                android:textSize="11dp"
+                android:layout_marginTop="3dp"
+                android:text="Age-29"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_age"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:text="26 Augest"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5:00 Pm"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_date"
+                android:layout_marginTop="3dp"
+                android:textSize="11dp"
+                android:layout_below="@+id/tv_age"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black" />
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="22dp"
+            android:layout_below="@+id/img_pic"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/rel3"
+            android:text="Status" />
+
+   <TextView
+       android:id="@+id/tv_Solved"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/rel3"
+       android:text="Solved"
+       android:layout_below="@+id/tv_status"
+       android:background="@drawable/round_button"
+       android:backgroundTint="#1DC734"
+       android:layout_marginTop="10dp"
+       android:textColor="@color/white"
+       android:layout_marginStart="15dp"
+       android:paddingHorizontal="20dp"
+       android:layout_marginLeft="15dp" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CardView">
+        <TextView
+            android:id="@+id/tv_Relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="7dp"
+            android:text="Relative"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="7dp"
+            android:text="Name"
+            android:layout_below="@+id/tv_Relative"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tv_Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="7dp"
+            android:text="Age"
+            android:layout_below="@+id/tv_name"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tv_Relation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="7dp"
+            android:text="Relation"
+            android:layout_below="@+id/tv_Age"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tv_MobNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="7dp"
+            android:text="Mobile Number"
+            android:layout_below="@+id/tv_Relation"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tv_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="7dp"
+            android:text="Email"
+            android:layout_below="@+id/tv_MobNo"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/RelativeLayout"
+        android:layout_below="@+id/CardView"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_hisName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="vincent Estrods"/>
+        <TextView
+            android:id="@+id/tv_hisAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hisName"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="65"/>
+        <TextView
+            android:id="@+id/tv_hisRelation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hisAge"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="Father"/>
+        <TextView
+            android:id="@+id/tv_hisMob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hisRelation"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="+91 848484848"/>
+        <TextView
+            android:id="@+id/tv_hisEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hisMob"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="Example@gmail.com"/>
+
+</RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:indeterminateDrawable="@drawable/progressbar"
+        android:visibility="gone">
+
+    </ProgressBar>
+
+    </RelativeLayout>
+
+

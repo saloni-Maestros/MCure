@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CalendarActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:elevation="25dp">
+
+        <ImageView
+            android:id="@+id/imgarrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:text="SCHEDULE"
+            android:layout_marginTop="22dp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_Days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginStart="20dp"
+        android:text="DAYS"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/Linearone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Days"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recyclerview_Days"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+       <!-- <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnSunday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Sunday"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnMonday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="12dp"
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Monday"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp"
+            android:layout_marginLeft="7dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnTuesday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="12dp"
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Tuesday"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp"
+            android:layout_marginLeft="7dp">
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearoneq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Days"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="18dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BtnWednesday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="Wednesday"
+                android:textColor="@color/black"
+                app:cornerRadius="40dp"
+                android:layout_marginLeft="7dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BtnThursday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="Thursday"
+                android:textColor="@color/black"
+                app:cornerRadius="40dp"
+                android:layout_marginLeft="7dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BtnFriday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="Friday"
+                android:textColor="@color/black"
+                app:cornerRadius="40dp"
+                android:layout_marginLeft="7dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Linearlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BtnSaturday"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="Saturday"
+                android:textColor="@color/black"
+                app:cornerRadius="40dp"
+                android:layout_marginLeft="7dp">
+
+            </com.google.android.material.button.MaterialButton>
+        </LinearLayout>
+    </LinearLayout>
+-->
+     <TextView
+         android:id="@+id/tv_Times"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="TIMES"
+         android:layout_below="@+id/Linearone"
+         android:layout_marginTop="20dp"
+         android:layout_marginStart="22dp"
+         android:textColor="@color/black"
+         android:layout_marginLeft="22dp" />
+
+    <LinearLayout
+        android:id="@+id/Linearone4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Times"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnTimeSlot1"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="8:00Am To 10:00 Am"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnTimeSlot2"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="10:00Am To 12:00 Pm"
+            android:textColor="@color/black"
+            app:cornerRadius="40dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+-->
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recyclerview_Calender"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_Times"
+        android:layout_marginTop="7dp"
+        android:visibility="visible" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtn_Submit"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#0095B7"
+        android:text="SUBMIT"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp" />
+
+
+
+
+
+</RelativeLayout>

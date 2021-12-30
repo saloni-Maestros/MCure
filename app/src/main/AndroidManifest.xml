@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.MCure.MCure">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/arogyalogo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@id/Arogya_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ArogyaLabSide">
+        <activity android:name="com.MCure.MCure.ShowHistoryActivity"></activity>
+        <activity android:name="com.MCure.MCure.CaseHistoryChatActivity" />
+        <activity android:name="com.MCure.MCure.ReportScreenActivity" />
+        <activity android:name="com.MCure.MCure.LabOrderActivity" />
+        <activity android:name="com.MCure.MCure.EditLabTestActivity" />
+        <activity android:name="com.MCure.MCure.AddpackageTestActivity" />
+        <activity android:name="com.MCure.MCure.ShowPackageTestActivity" />
+        <activity
+            android:name="com.MCure.MCure.EditLabPackageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.MCure.MCure.PackageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.MCure.MCure.LabShowPackageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.MCure.MCure.LabPackageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.MCure.MCure.LabTestActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.MCure.MCure.LabAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.MCure.MCure.LabHomeActivity"
+            android:exported="true" />
+        <activity android:name="com.MCure.MCure.CalendarActivity" />
+        <activity android:name="com.MCure.MCure.ProfileSettingActivity" />
+        <activity
+            android:name="com.MCure.MCure.NavActivity"
+            tools:ignore="IntentFilterExportedReceiver" />
+        <activity android:name="com.MCure.MCure.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.MCure.MCure.HomeScreen2Activity" />
+        <activity android:name="com.MCure.MCure.HomeScreen1MainActivity" />
+        <activity android:name="com.MCure.MCure.ConsultationsCharge2Activity" />
+        <activity android:name="com.MCure.MCure.ConsultationChargeActivity" />
+        <activity android:name="com.MCure.MCure.CaseHistryDeatilActivity" />
+        <activity android:name="com.MCure.MCure.CaseHistoryscrenActivity" />
+        <activity android:name="com.MCure.MCure.ChangeMobNoActivity" />
+        <activity android:name="com.MCure.MCure.ChangePasswordActivity" />
+        <activity android:name="com.MCure.MCure.CustomSupportActivity" />
+        <activity android:name="com.MCure.MCure.SelectScreenActivity" />
+        <activity android:name="com.MCure.MCure.OtpActivity" />
+        <activity android:name="com.MCure.MCure.LoginActivity" />
+        <activity android:name="com.MCure.MCure.MainActivity" />
+    </application>
+
+</manifest>
